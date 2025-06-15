@@ -2,39 +2,37 @@
   margin: 10px;
 }
 
-#divider {
-  min-height: 1px;
-  background-color: rgba(20, 20, 20, 0.5);
-  margin-left: 5px;
-  margin-right: 5px;
-}
 
 /* ######### */
 #quickview-box #left-box {
   margin: 6px;
+  margin-right: 0px;
+  padding-right: 3px;
   min-width: 350px;
-  background-color: rgba(40, 40, 40, 0.7);
-  border-radius: 10px;
+  background-color: @module_background;
+  border-radius: 10px 0px 0px 10px;
 }
 
 #quickview-box #right-box {
   margin: 6px;
+  margin-left: 0px;
+  padding-left: 3px;
   min-width: 350px;
-  background-color: rgba(40, 40, 40, 0.7);
-  border-radius: 10px;
+  background-color: @module_background;
+  border-radius: 0px 10px 10px 0px;
 }
 
 #quickview-box #quickbuttons-box {
   margin: 6px;
   margin-bottom: 47px;
   min-width: 120px;
-  background-color: rgba(40, 40, 40, 0.7);
+  background-color: @module_background;
   border-radius: 10px;
 }
 
 
 #quickview-box #wlan-box #wlan-button {
-  background-color: rgba(28, 28, 28, 0.7);
+  background-color: @module_button;
   border-radius: 10px;
   min-height: 20px;
   margin:10px;
@@ -45,7 +43,7 @@
 }
 
 #quickview-box #bluetooth-box #bluetooth-button {
-  background-color: rgba(28, 28, 28, 0.7);
+  background-color: @module_button;
   border-radius: 10px;
   min-height: 20px;
   margin:10px;
@@ -56,7 +54,7 @@
 }
 
 #quickview-box #audio-box #audio-button {
-  background-color: rgba(28, 28, 28, 0.7);
+  background-color: @module_button;
   border-radius: 10px;
   min-height: 20px;
   margin:10px;

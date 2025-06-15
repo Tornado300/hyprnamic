@@ -29,7 +29,7 @@ class QuickView(Box):
             orientation="v",
             children=[
                 self.qv_wlan,
-                Box(name="divider"),
+                Box(name="wl_ai_divider", style_classes=["h_divider"]),
                 self.qv_audio_input
             ]
         )
@@ -39,7 +39,7 @@ class QuickView(Box):
             orientation="v",
             children=[
                 self.qv_bluetooth,
-                Box(name="divider"),
+                Box(name="bt_ao_divider", style_classes=["h_divider"]),
                 self.qv_audio_output
             ]
         )

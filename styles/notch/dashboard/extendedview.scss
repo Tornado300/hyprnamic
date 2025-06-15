@@ -1,0 +1,52 @@
+#revealer .extendedview-box {
+  background-color: @module_background;
+  min-height: 220px;
+  border-radius: 20px 20px 20px 20px;
+  margin: 10px;
+}
+
+#revealer #device-list-box {
+  background-color: @transparent;
+  min-width: 300px;
+  min-height: 100px;
+  margin: 6px;
+  margin-top: 0px;
+  border-radius: 10px;
+}
+
+#revealer #dl_di_divider {
+  background-color: rgba(15, 15, 15, 0.6);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-width: 2px;
+}
+
+#revealer #dih_dib_divider {
+  min-height: 1.2px;
+}
+
+#revealer #device-info-box {
+  background-color: @transparent;
+  min-width: 350px;
+  min-height: 100px;
+  margin: 6px;
+  margin-top: 0px;
+  border-radius: 10px;
+}
+
+#revealer #device-info-header-box {
+  min-height: 67px;
+}
+
+#revealer #device-info-header-entry {
+  background-color: @module_button;
+  margin: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #aaaaaa;
+  border-width: 0.3px;
+  min-width: 300px;
+}

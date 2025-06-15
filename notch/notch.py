@@ -3,7 +3,7 @@ from fabric.widgets.centerbox import CenterBox
 from fabric.widgets.stack import Stack
 from fabric.widgets.wayland import WaylandWindow as Window
 from gi.repository import Gdk
-from notch.dashboard.quickview import QuickView
+from notch.dashboard.dashboard import Dashboard
 import json
 
 
@@ -45,7 +45,7 @@ class Notch(Window):
 
         # self.floating_notification = NotificationContainer(server=server, monitor_id=monitor_id, h_expand=False)
 
-        self.add_widget(WidgetWrapper(QuickView(), "quickview", {}, {}))
+        self.add_widget(WidgetWrapper(Dashboard(), "dashboard", {}, {}))
 
         self.stack = Stack(
             name="notch-stack",
