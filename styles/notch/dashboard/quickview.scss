@@ -1,0 +1,125 @@
+#quickview-box {
+  margin: 10px;
+}
+
+#divider {
+  min-height: 1px;
+  background-color: rgba(20, 20, 20, 0.5);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* ######### */
+#quickview-box #left-box {
+  margin: 6px;
+  min-width: 350px;
+  background-color: rgba(40, 40, 40, 0.7);
+  border-radius: 10px;
+}
+
+#quickview-box #right-box {
+  margin: 6px;
+  min-width: 350px;
+  background-color: rgba(40, 40, 40, 0.7);
+  border-radius: 10px;
+}
+
+#quickview-box #quickbuttons-box {
+  margin: 6px;
+  margin-bottom: 47px;
+  min-width: 120px;
+  background-color: rgba(40, 40, 40, 0.7);
+  border-radius: 10px;
+}
+
+
+#quickview-box #wlan-box #wlan-button {
+  background-color: rgba(28, 28, 28, 0.7);
+  border-radius: 10px;
+  min-height: 20px;
+  margin:10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#quickview-box #bluetooth-box #bluetooth-button {
+  background-color: rgba(28, 28, 28, 0.7);
+  border-radius: 10px;
+  min-height: 20px;
+  margin:10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#quickview-box #audio-box #audio-button {
+  background-color: rgba(28, 28, 28, 0.7);
+  border-radius: 10px;
+  min-height: 20px;
+  margin:10px;
+  margin-bottom:5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+#quickview-box #audio-box #audio-slider {
+  background-color: rgba(28, 28, 28, 0.7);
+  border-radius: 10px;
+  margin:10px;
+  margin-top:5px;
+  margin-right:5px;
+  padding: 10px;
+}
+
+
+#quickview-box #audio-box #audio-slider trough {
+  background-color: #00bbcc;
+  min-height: 7px;
+  border-radius: 100px;
+}
+
+#quickview-box #audio-box #audio-slider slider {
+  background-color: #dddddd;
+  min-width: 15px;
+  min-height: 13px;
+  border-radius: 100px;
+  margin: -5px;
+}
+
+
+
+
+#quickview-box .quickbuttons-button {
+  background-color: rgba(28, 28, 28, 0.7);
+  border-radius: 15px;
+  min-height: 40px;
+  min-width: 40px;
+}
+
+#quickview-box #quickbuttons-button1 {
+  margin: 10px;
+  border-radius: 13px 10px 10px 10px;
+}
+
+#quickview-box #quickbuttons-button2 {
+  margin: 10px;
+  border-radius: 10px 13px 10px 10px;
+}
+
+#quickview-box #quickbuttons-button3 {
+  margin: 10px;
+  margin-top: 11px;
+  border-radius: 10px 10px 10px 13px;
+}
+
+#quickview-box #quickbuttons-button4 {
+  margin: 10px;
+  margin-top: 11px;
+  border-radius: 10px 10px 13px 10px;
+}

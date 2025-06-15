@@ -1,0 +1,9 @@
+@import "/home/tornado300/.config/fabric_v2/styles/notch/dashboard/quickview.scss";
+@import "/home/tornado300/.config/fabric_v2/styles/notch/notch.scss";
+
+
+
+* {
+    all: unset;
+    font-family: "Zed Sans";
+}
