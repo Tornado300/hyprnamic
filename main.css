@@ -1,4 +1,6 @@
+@import "/home/tornado300/.config/fabric_v2/styles/colors.scss";
 @import "/home/tornado300/.config/fabric_v2/styles/notch/dashboard/quickview.scss";
+@import "/home/tornado300/.config/fabric_v2/styles/notch/dashboard/extendedview.scss";
 @import "/home/tornado300/.config/fabric_v2/styles/notch/notch.scss";
 
 
@@ -6,4 +8,18 @@
 * {
     all: unset;
     font-family: "Zed Sans";
+}
+
+.h_divider {
+  min-height: 1px;
+  background-color: rgba(20, 20, 20, 0.5);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.v_divider {
+    min-width: 1px;
+        background-color: rgba(20, 20, 20, 0.5);
+        margin-top: 5px;
+        margin-bottom: 5px;
 }
