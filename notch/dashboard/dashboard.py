@@ -14,14 +14,17 @@ class Dashboard(Box):
         self.quickview = QuickView()
         self.revealer = Revealer(
             name="revealer",
-            # transition_type=None,
-            transition_duration=10,
+            transition_type="slide-down",
+            transition_duration=400,
             child=EVBluetooth()
         )
 
         self.add(self.quickview)
         self.add(self.revealer)
-        self.extend()
+        # self.extend()
 
     def extend(self):
         self.revealer.reveal()
+
+    def contract(self):
+        self.revealer.unreveal()
