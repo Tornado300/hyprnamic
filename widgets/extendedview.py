@@ -1,29 +1,13 @@
 from fabric.widgets.box import Box
 from fabric.widgets.button import Button
-from fabric.widgets.entry import Entry
 from fabric.widgets.scrolledwindow import ScrolledWindow
+from fabric.widgets.entry import Entry
 
 
-class QVBluetooth(Box):
-    def __init__(self):
+class EV(Box):
+    def __init__(self, name, buttonfactory, ):
         super().__init__(
-            name="bluetooth-box",
-            h_expand=True
-        )
-
-        self.button = Button(
-            name="bluetooth-button",
-            label="Nicht Verbunden",
-            h_expand=True
-        )
-
-        self.add(self.button)
-
-
-class EVBluetooth(Box):
-    def __init__(self):
-        super().__init__(
-            name="bluetooth-box",
+            name=f"{name}-box",
             style_classes=["extendedview-box"],
             orientation="h"
         )
@@ -33,10 +17,22 @@ class EVBluetooth(Box):
             children=[
                 ScrolledWindow(
                     kinetic_scroll=True,
-                    child=None
+                    child=Box(
+                        name="device-list-inner-box",
+                        orientation="v",
+                        children=[
+                            Button(label="test1"),
+                            Button(label="test2"),
+                            Button(label="test3"),
+                            Button(label="test4"),
+                            Button(label="test5")
+                        ]
+                    )
                 )
             ]
         )
+        self.button_list = self.device_list.children[0].child_get().children[0]
+        print(self.button_list)
 
         self.device_info_header = Box(
             name="device-info-header-box",
@@ -44,12 +40,14 @@ class EVBluetooth(Box):
             children=[
                 Entry(
                     name="device-info-header-entry",
+                    text="Device Name"
                 )
             ]
         )
         self.device_info_body = Box(
             name="device-info-body-box",
         )
+
         self.device_info = Box(
             name="device-info-box",
             orientation="v",

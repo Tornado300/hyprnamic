@@ -1,7 +1,7 @@
 from fabric.widgets.box import Box
 from fabric.widgets.revealer import Revealer
 from notch.dashboard.quickview import QuickView
-from notch.dashboard.bluetooth import EVBluetooth
+from widgets.extendedview import EV
 
 
 class Dashboard(Box):
@@ -16,7 +16,7 @@ class Dashboard(Box):
             name="revealer",
             transition_type="slide-down",
             transition_duration=400,
-            child=EVBluetooth()
+            child=EV("bluetooth", None)
         )
 
         self.add(self.quickview)

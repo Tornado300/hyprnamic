@@ -1,4 +1,4 @@
-from fabric.widgets.box import Box
+# from fabric.widgets.box import Box
 from fabric.widgets.centerbox import CenterBox
 from fabric.widgets.stack import Stack
 from fabric.widgets.wayland import WaylandWindow as Window
@@ -26,7 +26,7 @@ class Notch(Window):
             monitor=monitor_id,
             layer="top",
             anchor="top",
-            margin="-40px 10px 10px 10px",
+            margin="-41px 10px 10px 10px",
             keyboard_mode="none",
             exclusivity="normal",
             visible=True,
@@ -62,30 +62,30 @@ class Notch(Window):
             h_align="center",
             v_align="center",
             # start_children=RoundedAngleEnd(
-                # name="corner-notch-left",
-                # style_classes=["corner-notch"],
-                # place="topleft",
-                # height=self.widgets["compact"].corners["left"]["height"],
-                # width=self.widgets["compact"].corners["left"]["width"],
+            # name="corner-notch-left",
+            # style_classes=["corner-notch"],
+            # place="topleft",
+            # height=self.widgets["compact"].corners["left"]["height"],
+            # width=self.widgets["compact"].corners["left"]["width"],
             # ),
             center_children=self.stack,
             # end_children=RoundedAngleEnd(
-                # name="corner-notch-right",
-                # style_classes=["corner-notch"],
-                # place="topright",
-                # height=self.widgets["compact"].corners["right"]["height"],
-                # width=self.widgets["compact"].corners["right"]["width"],
+            # name="corner-notch-right",
+            # style_classes=["corner-notch"],
+            # place="topright",
+            # height=self.widgets["compact"].corners["right"]["height"],
+            # width=self.widgets["compact"].corners["right"]["width"],
             # )
         )
 
         # self.notch_box_bottom = Box(name="notch-box-bottom",
-                                    # orientation="h",
-                                    # h_expand=True,
-                                    # v_expand=True,
-                                    # h_align="center",
-                                    # v_align="center",
-                                    # children=[self.floating_notification]
-                                    # )
+        # orientation="h",
+        # h_expand=True,
+        # v_expand=True,
+        # h_align="center",
+        # v_align="center",
+        # children=[self.floating_notification]
+        # )
 
         self.notch_box = CenterBox(
             name="notch-box",
