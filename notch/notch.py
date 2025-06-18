@@ -62,30 +62,30 @@ class Notch(Window):
             h_align="center",
             v_align="center",
             # start_children=RoundedAngleEnd(
-                # name="corner-notch-left",
-                # style_classes=["corner-notch"],
-                # place="topleft",
-                # height=self.widgets["compact"].corners["left"]["height"],
-                # width=self.widgets["compact"].corners["left"]["width"],
+            # name="corner-notch-left",
+            # style_classes=["corner-notch"],
+            # place="topleft",
+            # height=self.widgets["compact"].corners["left"]["height"],
+            # width=self.widgets["compact"].corners["left"]["width"],
             # ),
             center_children=self.stack,
             # end_children=RoundedAngleEnd(
-                # name="corner-notch-right",
-                # style_classes=["corner-notch"],
-                # place="topright",
-                # height=self.widgets["compact"].corners["right"]["height"],
-                # width=self.widgets["compact"].corners["right"]["width"],
+            # name="corner-notch-right",
+            # style_classes=["corner-notch"],
+            # place="topright",
+            # height=self.widgets["compact"].corners["right"]["height"],
+            # width=self.widgets["compact"].corners["right"]["width"],
             # )
         )
 
         # self.notch_box_bottom = Box(name="notch-box-bottom",
-                                    # orientation="h",
-                                    # h_expand=True,
-                                    # v_expand=True,
-                                    # h_align="center",
-                                    # v_align="center",
-                                    # children=[self.floating_notification]
-                                    # )
+        # orientation="h",
+        # h_expand=True,
+        # v_expand=True,
+        # h_align="center",
+        # v_align="center",
+        # children=[self.floating_notification]
+        # )
 
         self.notch_box = CenterBox(
             name="notch-box",
@@ -225,7 +225,7 @@ class Notch(Window):
     def add_widget(self, widget_wrapper):
         self.widgets[widget_wrapper.name] = widget_wrapper
 
-    def extend_dashboard(self):
+    def expand_dashboard(self):
         self.widgets["dashboard"].widget.extend()
 
     def contract_dashboard(self):
