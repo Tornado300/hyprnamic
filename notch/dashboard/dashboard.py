@@ -16,7 +16,7 @@ class Dashboard(Box):
             name="revealer",
             transition_type="slide-down",
             transition_duration=400,
-            child=EV("bluetooth", None)
+            child=EV("bluetooth")
         )
 
         self.add(self.quickview)

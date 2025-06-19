@@ -1,3 +1,21 @@
+#device-list-scrolledwindow scrollbar {
+  background-color: #ff0000;
+}
+#device-list-scrolledwindow slider {
+  min-width: 8px;
+  min-height: 50px;
+  background-color: #00ff00;
+}
+
+
+
+#device-list-scrolledwindow {
+  min-width: 200px;
+  min-height: 100px;
+  background-color: rgba(20, 10, 10, 0.4);
+}
+
+
 #revealer .extendedview-box {
   background-color: @module_background;
   min-height: 220px;

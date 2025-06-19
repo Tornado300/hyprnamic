@@ -3,9 +3,8 @@ from fabric.widgets.button import Button
 from fabric.widgets.scrolledwindow import ScrolledWindow
 from fabric.widgets.entry import Entry
 
-
 class EV(Box):
-    def __init__(self, name, buttonfactory, ):
+    def __init__(self, name):
         super().__init__(
             name=f"{name}-box",
             style_classes=["extendedview-box"],
@@ -16,16 +15,35 @@ class EV(Box):
             name="device-list-outer-box",
             children=[
                 ScrolledWindow(
+                    name="device-list-scrolledwindow",
                     kinetic_scroll=True,
+                    spacing=10,
+                    min_content_size=(250, 105),
+                    max_content_size=(250, 105),
+                    v_scrollbar_policy="allways",
                     child=Box(
                         name="device-list-inner-box",
                         orientation="v",
                         children=[
-                            Button(label="test1"),
-                            Button(label="test2"),
-                            Button(label="test3"),
-                            Button(label="test4"),
-                            Button(label="test5")
+                            Button(style_classes=["device-list-button"], label="test--"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test"),
+                            Button(style_classes=["device-list-button"], label="test__"),
                         ]
                     )
                 )
