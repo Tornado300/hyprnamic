@@ -21,7 +21,7 @@ class Dashboard(Box):
 
         self.add(self.quickview)
         self.add(self.revealer)
-        # self.extend()
+        self.extend()
 
     def extend(self):
         self.revealer.reveal()

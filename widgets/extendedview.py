@@ -3,6 +3,7 @@ from fabric.widgets.button import Button
 from fabric.widgets.scrolledwindow import ScrolledWindow
 from fabric.widgets.entry import Entry
 
+
 class EV(Box):
     def __init__(self, name):
         super().__init__(
@@ -49,7 +50,7 @@ class EV(Box):
                 )
             ]
         )
-        self.button_list = self.device_list.children[0].child_get().children[0]
+        self.button_list = self.device_list.children[0].child_get(0)
         print(self.button_list)
 
         self.device_info_header = Box(
@@ -69,7 +70,7 @@ class EV(Box):
         self.device_info = Box(
             name="device-info-box",
             orientation="v",
-            h_expand=True,
+
             children=[
                 self.device_info_header,
                 Box(name="dih_dib_divider", style_classes=["h_divider"]),
