@@ -2,11 +2,17 @@ from fabric.widgets.box import Box
 from notch.dashboard.wlan import QVWlan
 from notch.dashboard.bluetooth import QVBluetooth
 from notch.dashboard.audio import QVAudio
-from notch.dashboard.quickbuttons import QVQuickbuttons
+from notch.dashboard.quickbuttons import QVQuickbutton
 
 
 class QuickView(Box):
-    def __init__(self):
+    def __init__(
+            self,
+            wlan_callback,
+            bluetooth_callback,
+            audio_input_callback,
+            audio_output_callback
+    ):
         super().__init__(
             name="quickview-box",
             orientation="h",
@@ -15,14 +21,14 @@ class QuickView(Box):
             show=True,
             show_all=True
         )
-        self.qv_wlan = QVWlan()
-        self.qv_audio_input = QVAudio()
-        self.qv_bluetooth = QVBluetooth()
-        self.qv_audio_output = QVAudio()
-        self.qb1 = QVQuickbuttons("quickbuttons-button1")
-        self.qb2 = QVQuickbuttons("quickbuttons-button2")
-        self.qb3 = QVQuickbuttons("quickbuttons-button3")
-        self.qb4 = QVQuickbuttons("quickbuttons-button4")
+        self.qv_wlan = QVWlan(wlan_callback)
+        self.qv_bluetooth = QVBluetooth(bluetooth_callback)
+        self.qv_audio_input = QVAudio(audio_input_callback)
+        self.qv_audio_output = QVAudio(audio_output_callback)
+        self.qb1 = QVQuickbutton("quickbuttons-button1")
+        self.qb2 = QVQuickbutton("quickbuttons-button2")
+        self.qb3 = QVQuickbutton("quickbuttons-button3")
+        self.qb4 = QVQuickbutton("quickbuttons-button4")
 
         self.left_box = Box(
             name="left-box",

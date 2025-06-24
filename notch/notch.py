@@ -225,8 +225,8 @@ class Notch(Window):
     def add_widget(self, widget_wrapper):
         self.widgets[widget_wrapper.name] = widget_wrapper
 
-    def expand_dashboard(self):
-        self.widgets["dashboard"].widget.extend()
+    def expand_dashboard(self, variant):
+        self.widgets["dashboard"].widget.extend(variant)
 
     def contract_dashboard(self):
         self.widgets["dashboard"].widget.contract()
